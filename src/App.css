@@ -1,0 +1,103 @@
+/* Base styles */
+
+body {
+  font-family: sans-serif; /* Choose a nice, readable font */
+  margin: 0;
+  padding: 0;
+}
+
+.container { /* Assuming you're using MDBContainer with a custom class */
+  display: flex;
+  min-height: 100vh; /* Fills viewport height */
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+}
+
+/* Login form styles */
+
+.login-form {
+  background-color: #fccb90; /* Fallback color */
+  width: 400px; /* Adjust width as needed */
+  padding: 30px; /* Add some padding for breathing room */
+  border-radius: 0.3rem; /* Consistent rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.login-form h4 {
+  text-align: center;
+  margin-bottom: 20px; /* Space between heading and form fields */
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  margin-bottom: 15px;
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ee7724; /* Gradient start color */
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.login-form button:hover {
+  background-color: #d8363a; /* Gradient end color on hover */
+}
+
+.login-form a {
+  color: #b44593; /* Match gradient end color for a cohesive look */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.login-form a:hover {
+  color: #dd3675; /* Slightly darker shade on hover for contrast */
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 20px; /* Space after sign-up prompt */
+}
+
+/* Company information styles */
+
+.company-info {
+  background-image: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); /* Gradient background */
+  color: white; /* Text color for contrast */
+  padding: 30px;
+  border-radius: 0.3rem; /* Consistent rounded corners */
+}
+
+.company-info h4 {
+  margin-bottom: 15px; /* Space between heading and content */
+}
+
+.company-info p {
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Media queries for responsive adjustments */
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for wider screens */
+  }
+
+  .login-form {
+    grid-column: 1; /* Position in first column */
+  }
+
+  .company-info {
+    grid-column: 2; /* Position in second column */
+  }
+}
+
